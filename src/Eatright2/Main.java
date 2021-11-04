@@ -58,7 +58,7 @@ public class Main extends Personinfo {
 
             double BMRMG = (67.47 + (13.75 * a.getWeight()) + (5.003 * a.getHeight()) - (6.755 * a.getAge()) + (233 * a.getUserGain()));
             double BMRFG = (655.1 + (9.563 * a.getWeight()) + (1.850 * a.getHeight()) - (4.674 * a.getAge()) + (233 * a.getUserGain()));
-            
+
             double BMRML = (67.47 + (13.75 * a.getWeight()) + (5.003 * a.getHeight()) - (6.755 * a.getAge()) - (233 * a.getUserGain()));
             double BMRFL = (655.1 + (9.563 * a.getWeight()) + (1.850 * a.getHeight()) - (4.674 * a.getAge()) - (233 * a.getUserGain()));
 
@@ -85,15 +85,13 @@ public class Main extends Personinfo {
 
                 if (a.getWeightgain().equalsIgnoreCase("Gain")) {
                     System.out.println(foodgain.get(0));
-                    continue;
+                    break;
                 } else if (a.getWeightgain().equalsIgnoreCase("Loss")) {
                     System.out.println(foodgain.get(1));
-                    continue;
+                    break;
                 }
 
             }
-
-
 
         }
 
