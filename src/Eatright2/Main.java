@@ -28,11 +28,10 @@ public class Main extends Personinfo {
         new Music("Time to Spare - An Jone.wav");
 
 
-        //initialisering
 
         System.out.println("                                    Press Enter button to start");
 
-        
+
         boolean running = true;
         while (running) {
 
@@ -56,10 +55,10 @@ public class Main extends Personinfo {
             }
 
 
-            //BMR Gain weight
+
             double BMRMG = (67.47 + (13.75 * a.getWeight()) + (5.003 * a.getHeight()) - (6.755 * a.getAge()) + (233 * a.getUserGain()));
             double BMRFG = (655.1 + (9.563 * a.getWeight()) + (1.850 * a.getHeight()) - (4.674 * a.getAge()) + (233 * a.getUserGain()));
-            //BMR Lose weight
+            
             double BMRML = (67.47 + (13.75 * a.getWeight()) + (5.003 * a.getHeight()) - (6.755 * a.getAge()) - (233 * a.getUserGain()));
             double BMRFL = (655.1 + (9.563 * a.getWeight()) + (1.850 * a.getHeight()) - (4.674 * a.getAge()) - (233 * a.getUserGain()));
 
